@@ -1,7 +1,7 @@
 package user
 
 import (
-	errors "github.com/avinashb98/bookstore-users-api/utils/error"
+	"github.com/avinashb98/bookstore-users-api/utils/errors"
 	"strings"
 )
 

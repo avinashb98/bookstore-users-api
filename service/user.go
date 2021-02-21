@@ -2,7 +2,7 @@ package service
 
 import (
 	entity "github.com/avinashb98/bookstore-users-api/domain/user"
-	errors "github.com/avinashb98/bookstore-users-api/utils/error"
+	"github.com/avinashb98/bookstore-users-api/utils/errors"
 )
 
 func CreateUser(user entity.User) (*entity.User, *errors.RestErr) {

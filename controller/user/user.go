@@ -3,7 +3,7 @@ package user
 import (
 	entity "github.com/avinashb98/bookstore-users-api/domain/user"
 	"github.com/avinashb98/bookstore-users-api/service"
-	restErrors "github.com/avinashb98/bookstore-users-api/utils/error"
+	restErrors "github.com/avinashb98/bookstore-users-api/utils/errors"
 	"github.com/gin-gonic/gin"
 	"net/http"
 	"strconv"

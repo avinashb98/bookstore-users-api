@@ -2,7 +2,8 @@ package user
 
 import (
 	"fmt"
-	errors "github.com/avinashb98/bookstore-users-api/utils/error"
+	"github.com/avinashb98/bookstore-users-api/utils/dates"
+	"github.com/avinashb98/bookstore-users-api/utils/errors"
 )
 
 var (
@@ -28,6 +29,9 @@ func (user *User) Save() *errors.RestErr {
 
 		return errors.NewBadRequestError(fmt.Sprintf("user %d already exists", user.ID))
 	}
+	now := dates.GetNowString()
+	user.DateCreated = now
+	user.DateUpdate = now
 	usersDB[user.ID] = user
 	return nil
 }
